@@ -6,3 +6,7 @@ model/CategoryTbl.java
  model.CategoryTbl
 com/example/team/mission2/domain/Member.java
  com.example.team.mission2.domain.Member
+com/example/team/mission2/repository/CategoryRepository.java
+ com.example.team.mission2.repository.CategoryRepository
+com/example/team/mission2/domain/CategoryTBL.java
+ com.example.team.mission2.domain.CategoryTBL

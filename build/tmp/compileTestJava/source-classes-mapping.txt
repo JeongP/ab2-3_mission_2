@@ -2,3 +2,5 @@ com/example/team/mission2/Mission2ApplicationTests.java
  com.example.team.mission2.Mission2ApplicationTests
 com/example/team/mission2/repository/MemberRepositoryTest.java
  com.example.team.mission2.repository.MemberRepositoryTest
+com/example/team/mission2/repository/CategoryRepositoryTest.java
+ com.example.team.mission2.repository.CategoryRepositoryTest
