@@ -26,11 +26,11 @@ public class CategoryRepositoryTest {
     public void 카테고리삽입() {
         //given
         CategoryTBL category = new CategoryTBL();
-        category.setCategoryId("e");
-        category.setParentCategoryId("a");
-        category.setCategoryName("b");
-        category.setDescription("c");
-        category.setCategoryType("d");
+        category.setCategoryId("TEST_ID");
+        category.setParentCategoryId("Test_column1");
+        category.setCategoryName("Test_column2");
+        category.setDescription("Test_column3");
+        category.setCategoryType("Test_column4");
 
         //when
         String savedId = categoryRepository.save(category);
@@ -62,7 +62,7 @@ public class CategoryRepositoryTest {
 //        categoryRepository.save(categoryTBL2);
 
         List<CategoryTBL> result = categoryRepository.findAll();
-        System.out.println(result.size());
+        System.out.println("전체 data 갯수: " + result.size());
 //        Assertions.assertThat(result.size()).isEqualTo(2);
     }
 
