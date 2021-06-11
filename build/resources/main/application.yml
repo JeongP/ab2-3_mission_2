@@ -1,33 +1,42 @@
 ## TIBERO CONNECTION
 
-#spring:
-#  datasource:
-#    url: jdbc:tibero:thin:@192.168.179.238:8629:tibero
-#    driver-class-name: com.tmax.tibero.jdbc.TbDriver
-#    username: AM
-#    password: AM
-#
-#  jpa:
-#    properties:
-#      hibernates:
-#        dialect: org.hibernamte.dialect.Oracle10gDialect
-
-## H2 Connection
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/mission2
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-
+    url: jdbc:tibero:thin:@192.168.179.238:8629:tibero
+    driver-class-name: com.tmax.tibero.jdbc.TbDriver
+    username: AM
+    password: AM
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
-      hibernate:
-        # show_sql: true
+      hibernates:
+        dialect: org.hibernate.dialect.Oracle10gDialect
         format_sql: true
+    #    generate-ddl: true
+    database: oracle
 
-logging.level:
-  org.hibernate.SQL: debug
+
+## H2 Connection
+
+#spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/mission2
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        # show_sql: true
+#        format_sql: true
+#
+#logging.level:
+#  org.hibernate.SQL: debug
+#
+
 # org.hibernate.type: trace
